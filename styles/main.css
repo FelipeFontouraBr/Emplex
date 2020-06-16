@@ -1,4 +1,6 @@
-
+:root {
+    --title-color: #322153;
+}
 
 
 * {
@@ -20,6 +22,6 @@ a {
 }
 
 h1, h2, h3, h4, h5 {
-    color: ;
+    color: var(--title-color);
     font-family: 'Ubuntu', sans-serif;
 }
