@@ -61,5 +61,9 @@ header a span {
     align-items: center;
     margin-top: 40px;
     background-color: var(--primary-color);
-    transition: 400ms;
+    transition: 450ms;
+}
+
+#page-home main a:hover {
+    background-color: #119da4d0;
 }
