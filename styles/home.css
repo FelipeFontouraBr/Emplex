@@ -1,6 +1,12 @@
-
 header {
+    margin-top: 48px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+header a {
+    display: flex;
+    color: var(--title-color);
+    font-weight: 700;
 }
