@@ -33,3 +33,11 @@ header a span {
     width: 20px;
     height: 20px;
 }
+
+#page-home main {
+    max-width: 800px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+}
