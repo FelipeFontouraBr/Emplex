@@ -67,3 +67,13 @@ header a span {
 #page-home main a:hover {
     background-color: #119da4d0;
 }
+
+#page-home main a span {
+    width: 72px;
+    height: 72px;
+    border-top-left-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.06);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
