@@ -60,6 +60,6 @@ header a span {
     display: flex;
     align-items: center;
     margin-top: 40px;
-    background-color: blue;
+    background-color: var(--primary-color);
     transition: 400ms;
 }
