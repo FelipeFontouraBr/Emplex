@@ -51,3 +51,15 @@ header a span {
     line-height: 38px;
     margin-top: 24px;
 }
+
+#page-home main a {
+    width: 100%;
+    max-width: 360px;
+    height: 72px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    background-color: blue;
+    transition: 400ms;
+}
