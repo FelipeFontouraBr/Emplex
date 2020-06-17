@@ -1,6 +1,6 @@
 #page-home {
     height: 100vh;
-    background: url('../assets/background-home.svg') no-repeat;
+    /*background: url('../assets/background-home.svg') no-repeat;*/
     background-position: 35vw bottom;
 }
 
@@ -11,6 +11,12 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+}
+
+#img {
+    margin-left: 380px;
+    margin-top: 80px;
+    position: absolute;
 }
 
 header {
