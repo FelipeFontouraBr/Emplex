@@ -41,3 +41,7 @@ header a span {
     flex-direction: column;
     justify-content: center;
 }
+
+#page-home main h1 {
+    font-size: 54px;
+}
