@@ -45,3 +45,9 @@ header a span {
 #page-home main h1 {
     font-size: 54px;
 }
+
+#page-home main p {
+    font-size: 24px;
+    line-height: 38px;
+    margin-top: 24px;
+}
