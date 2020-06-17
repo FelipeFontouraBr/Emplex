@@ -77,3 +77,16 @@ header a span {
     align-items: center;
     justify-content: center;
 }
+#page-home main a span::after {
+    content: ""; /*Temos uma content nesse span*/
+    background-image: url('../assets/search.svg');/*Adicionamos uma imagem a esse span*/
+    /*Caso a imagem não aparece, é porque falta colocar as informações abaixo: */
+    width: 20px;
+    height: 20px;
+}
+
+#page-home main a strong {
+    flex: 1; /*Preenchimento automatico, ou seja, cresce toda a caixa no eixo x*/
+    color: white;
+    text-align: center;
+}
