@@ -27,10 +27,6 @@ header {
     justify-content: space-between;
 }
 
-header #logo {
-    
-}
-
 header a {
     display: flex;
     color: var(--title-color);
