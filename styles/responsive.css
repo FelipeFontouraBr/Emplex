@@ -7,5 +7,9 @@
         align-items: center;
         text-align: center;
     }
+
+    #page-home header a {
+        position: absolute;
+    }
     
 }
