@@ -21,9 +21,14 @@
 
 header {
     margin-top: 48px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 6fr 2fr;
     align-items: center;
     justify-content: space-between;
+}
+
+header #logo {
+    
 }
 
 header a {
@@ -50,6 +55,7 @@ header a span {
 
 #page-home main h1 {
     font-size: 54px;
+    
 }
 
 #page-home main p {
