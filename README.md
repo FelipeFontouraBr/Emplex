@@ -6,4 +6,4 @@ Development of the application web to search generales services in region of the
 :construction:
 
 ------
-Learning and Developing - by Felipe Fontoura - [See my linkedin!](https://www.linkedin.com/in/fontourafelipe/) :computer:
+Learning and Developing - by Felipe Fontoura - [See my linkedin!](https://www.linkedin.com/in/fontourafelipe/) 
