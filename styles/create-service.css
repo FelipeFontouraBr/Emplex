@@ -1,0 +1,18 @@
+#page-create-service {
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+}
+
+#page-create-service header{
+    margin-top: 48px;
+    display: grid;
+    grid-template-columns: 1fr 6fr 2fr;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#page-create-service header a {
+    color: var(--title-color);
+}
