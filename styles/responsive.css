@@ -20,3 +20,34 @@
         align-items: center;
     }
 }
+
+@media (min-width: 2000px) {
+    #page-home {
+        background-position-x: 50vw;
+        background-position-y: 30vw;
+    }
+}
+
+@media (max-height: 760px) {
+    #page-home {
+        margin-left: auto;
+        background-position-y: 180px;
+        background-size: 600px;
+    }
+
+    #page-home main {
+        max-width: 600px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    #page-home main h1 {
+        font-size: 42px;
+    }
+
+    #page-home main a {
+        height: 62px;
+    }
+}
