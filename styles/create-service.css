@@ -109,7 +109,7 @@ form button {
     border: 0;
     margin-top: 40px;
 
-    transition: 400ms;
+    transition: background-color 400ms;
 }
 
 form button:hover {
