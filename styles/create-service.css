@@ -58,6 +58,33 @@ form legend h2 {
 }
 
 form .field {
+    flex: 1;
     display: flex;
     flex-direction: column;
+
+    margin-bottom: 24px;
+}
+
+form .field-group {
+    display: flex;
+}
+
+form input {
+    background-color: #F0F0F5;
+    border: 0;
+    padding: 16px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+    outline-color: var(--primary-color);
+}
+
+form select {
+    width: 500px;
+    margin: 20px auto;
+    background-color: #F0F0F5;
+    border: 0;
+    padding: 16px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+    outline-color: var(--primary-color);
 }
