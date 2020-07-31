@@ -97,3 +97,8 @@ form label {
 form .field-group .field + .field {
     margin-left: 24px;
 }
+
+form button {
+    width: 260px;
+    height: 56px;
+}
