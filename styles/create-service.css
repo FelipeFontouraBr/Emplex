@@ -80,11 +80,20 @@ form input {
 
 form select {
     width: 500px;
-    margin: 20px auto;
+    margin: 0px auto;
     background-color: #F0F0F5;
     border: 0;
     padding: 16px 24px;
     font-size: 16px;
     border-radius: 8px;
     outline-color: var(--primary-color);
+}
+
+form label {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+form .field-group .field + .field {
+    margin-left: 24px;
 }
