@@ -108,6 +108,8 @@ form button {
     font-size: 16px;
     border: 0;
     margin-top: 40px;
+
+    transition: 400ms;
 }
 
 form button:hover {
