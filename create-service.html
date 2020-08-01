@@ -51,16 +51,20 @@
                             </div>
                         </div>
 
-                        <div class="field">
-                            <label for="city">En...</label>
-                            <select name="city" id="#">
-                                <option value="">Toda España</option>
-                                <option value="1">Asturias</option>
-                                <option value="2">Barcelona</option>
-                                <option value="3">Badajoz</option>
-                            </select>
-                        </div>
+                        <div class="field-group">
+                            <div class="field">
+                                <label for="state">Provincias</label>
+                                <select name="state" id="#">
+                                    <option value="">Seleccione la provincia</option>
+                                    <option value="1">Asturias</option>
+                                </select>
+                            </div>
 
+                            <div class="field">
+                                <label for="city">Municipios</label>
+                                <input type="number" name="city" placeholder="Seleccione el municipio" disabled>
+                            </div>
+                        </div>
 
                     </fieldset>
 
