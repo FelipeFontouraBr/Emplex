@@ -4,6 +4,9 @@ function populateState() {
 
     //Fazendo uma promossa e devolvendo
     fetch("https://raw.githubusercontent.com/IagoLast/pselect/master/data/provincias.json")
+    .then( (res) => {
+        return res.json()
+    })
 
 }
 
