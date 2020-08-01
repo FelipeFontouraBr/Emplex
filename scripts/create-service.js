@@ -20,8 +20,31 @@ function populateState() {
 
 populateState()
 
+// Pegando cidades
+function getCities(event) {
+    const citySelect = document.querySelector("select[name=city]")
+
+    const ufValue = event.target.value
+
+    const url = `https://raw.githubusercontent.com/IagoLast/pselect/master/${ufValue}/municipios.json`
+
+    fetch(url)
+    .then( (res) => {
+        return res.json() //transformando a resposta em json
+    })
+    //Pegando os estados
+    .then( cities => {
+
+        for( city of cities ) {
+            citySelect.innerHTML += `<option value="${city.id}">${city.nm}</option>`
+        }
+
+    })
+
+}
+
+
+
 document
     .querySelector("select[name=state]")
-    .addEventListener("change", function() {
-        console.log('Opa, mudei véi')
-    })
+    .addEventListener("change", getCities)
