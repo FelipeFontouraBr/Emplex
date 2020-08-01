@@ -9,7 +9,7 @@ function populateState() {
     })
     //Pegando os estados
     .then( states => {
-        stateSelect.innerHTML = `<option value="1">Valor</option>`
+        stateSelect.innerHTML += `<option value="1">Valor</option>`
     })
 
 
