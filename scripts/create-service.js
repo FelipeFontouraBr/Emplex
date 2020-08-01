@@ -9,9 +9,12 @@ function populateState() {
     })
     //Pegando os estados
     .then( states => {
-        stateSelect.innerHTML += `<option value="1">Valor</option>`
-    })
 
+        for( state of states ) {
+            stateSelect.innerHTML += `<option value="${state.id}">${state.nm}</option>`
+        }
+
+    })
 
 }
 
