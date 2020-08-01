@@ -9,16 +9,16 @@ function populateState() {
     })
     //Pegando os estados
     .then( states => {
-        stateSelect.innerHTML = `<option value="1"></option>`
+        stateSelect.innerHTML = `<option value="1">Valor</option>`
     })
 
 
 }
 
+populateState()
 
-
-/*document
-    .querySelector("select[name=city]")
+document
+    .querySelector("select[name=state]")
     .addEventListener("change", function() {
         console.log('Opa, mudei véi')
-    })*/
+    })
