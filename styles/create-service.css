@@ -154,3 +154,7 @@ form button:hover {
 
     color: var(--title-color);
 }
+
+.items-grid li.selected {
+    background: #e7f7f8;
+}
