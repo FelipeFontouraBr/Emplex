@@ -147,7 +147,10 @@ form button:hover {
 }
 
 .items-grid span {
+    margin-top: 12px;
     flex: 1;
     display: flex;
     align-items: center;
+
+    color: var(--title-color);
 }
