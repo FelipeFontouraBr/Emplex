@@ -3,7 +3,7 @@ function populateState() {
     const stateSelect = document.querySelector("select[name=state]")
 
     //Fazendo uma promossa e devolvendo
-    fetch("https://raw.githubusercontent.com/IagoLast/pselect/master/data/provincias.json")
+    fetch('https://raw.githubusercontent.com/IagoLast/pselect/master/data/provincias.json')
     .then( (res) => {
         return res.json() //transformando a resposta em json
     })
@@ -21,12 +21,13 @@ function populateState() {
 populateState()
 
 // Pegando cidades
+/*
 function getCities(event) {
     const citySelect = document.querySelector("select[name=city]")
 
-    const ufValue = event.target.value
+    //const ufValue = event.target.value
 
-    const url = `https://raw.githubusercontent.com/IagoLast/pselect/master/${ufValue}/municipios.json`
+    const url = `https://raw.githubusercontent.com/IagoLast/pselect/master/data/municipios.json`
 
     fetch(url)
     .then( (res) => {
@@ -39,6 +40,8 @@ function getCities(event) {
             citySelect.innerHTML += `<option value="${city.id}">${city.nm}</option>`
         }
 
+        citySelect.disabled = false
+
     })
 
 }
@@ -48,3 +51,4 @@ function getCities(event) {
 document
     .querySelector("select[name=state]")
     .addEventListener("change", getCities)
+*/
