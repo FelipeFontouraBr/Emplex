@@ -1,4 +1,4 @@
-
+// Pegando as provincias
 function populateState() {
     const stateSelect = document.querySelector("select[name=state]")
 
@@ -11,7 +11,7 @@ function populateState() {
     .then( states => {
 
         for( state of states ) {
-            stateSelect.innerHTML += `<option value="${state.id}">${state.nm}</option>`
+            stateSelect.innerHTML += `<option value="${state.nm}">${state.nm}</option>`
         }
 
     })
@@ -43,10 +43,7 @@ function getCities(event) {
         citySelect.disabled = false
 
     })
-
 }
-
-
 
 document
     .querySelector("select[name=state]")
