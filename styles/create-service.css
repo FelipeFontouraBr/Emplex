@@ -116,6 +116,12 @@ form button:hover {
     background-color: #12858b;
 }
 
+/*== ICONS ==*/
 .img-icon {
     height: 80px;
+}
+
+.items-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
