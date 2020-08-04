@@ -52,12 +52,12 @@ document
 
 // Itens of Services
 // Pegandos todos li
-const itemsServices = document.querySelectorAll(".item-grid li")
+const itemsServices = document.querySelectorAll(".items-grid li")
 
 for (const item of itemsServices) {
     item.addEventListener("click", handleSelectedItem)
 }
 
 function handleSelectedItem() {
-    
+    console.log(event.target)
 }
