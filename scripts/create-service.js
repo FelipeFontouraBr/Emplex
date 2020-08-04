@@ -59,5 +59,6 @@ for (const item of itemsServices) {
 }
 
 function handleSelectedItem() {
-    console.log(event.target)
+    const itemId = event.target.dataset.id
+    console.log()
 }
