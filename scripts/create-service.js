@@ -61,8 +61,9 @@ for (const item of itemsServices) {
 function handleSelectedItem() {
     const itemLi = event.target
 
-    // Adicionar ou remover uma classe com Javascript
+    // Adicionar ou remover uma classe do li
+    itemLi.classList.toggle("selected")
 
     const itemId = itemLi.dataset.id
-    console.log()
+   
 }
