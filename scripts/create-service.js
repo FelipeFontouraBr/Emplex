@@ -54,4 +54,10 @@ document
 // Pegandos todos li
 const itemsServices = document.querySelectorAll(".item-grid li")
 
-for (const item of itemsServices)
+for (const item of itemsServices) {
+    item.addEventListener("click", handleSelectedItem)
+}
+
+function handleSelectedItem() {
+    
+}
