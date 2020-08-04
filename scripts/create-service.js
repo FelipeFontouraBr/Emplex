@@ -59,6 +59,10 @@ for (const item of itemsServices) {
 }
 
 function handleSelectedItem() {
-    const itemId = event.target.dataset.id
+    const itemLi = event.target
+
+    // Adicionar ou remover uma classe com Javascript
+
+    const itemId = itemLi.dataset.id
     console.log()
 }
