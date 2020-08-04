@@ -49,3 +49,9 @@ document
     .querySelector("select[name=state]")
     .addEventListener("change", getCities)
 */
+
+// Itens of Services
+// Pegandos todos li
+const itemsServices = document.querySelectorAll(".item-grid li")
+
+for (const item of itemsServices)
