@@ -58,6 +58,9 @@ for (const item of itemsServices) {
     item.addEventListener("click", handleSelectedItem)
 }
 
+// variavel: sso é um array, onde vou tirar e selecionar dados
+let selectedItems = []
+
 function handleSelectedItem() {
     const itemLi = event.target
 
@@ -65,5 +68,16 @@ function handleSelectedItem() {
     itemLi.classList.toggle("selected")
 
     const itemId = itemLi.dataset.id
-   
+
+    
+
+    // verificar se existem items selecionados, se sim
+    // pegar os itens selecionados
+    const alreadySelected 
+
+    // se já estiver selecionado, tirar da seleção
+
+    // se não estiver selecionado, adicionar a seleção
+
+    // atualizar o campo escondido com os dados itens selecionados
 }
