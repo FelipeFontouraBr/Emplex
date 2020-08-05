@@ -73,7 +73,9 @@ function handleSelectedItem() {
 
     // verificar se existem items selecionados, se sim
     // pegar os itens selecionados
-    const alreadySelected 
+    const alreadySelected = selectedItems.findIndex( function(item) {
+        const itemFound = item === itemId
+    } )
 
     // se já estiver selecionado, tirar da seleção
 
