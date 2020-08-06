@@ -10,3 +10,8 @@
     align-items: center;
     transition: 400ms;
 }
+
+#modal .content {
+    color: white;
+    width: 420px;
+}
