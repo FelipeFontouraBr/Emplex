@@ -58,6 +58,8 @@ for (const item of itemsServices) {
     item.addEventListener("click", handleSelectedItem)
 }
 
+const collectedItems = document.querySelector("input[name=items]")
+
 // variavel: sso é um array, onde vou tirar e selecionar dados
 let selectedItems = []
 
@@ -97,4 +99,5 @@ function handleSelectedItem() {
     
 
     // atualizar o campo escondido com os dados itens selecionados
+    
 }
