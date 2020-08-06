@@ -59,7 +59,7 @@ for (const item of itemsServices) {
 }
 
 // variavel: sso é um array, onde vou tirar e selecionar dados
-let selectedItems = []
+let selectedItems = [2,3]
 
 function handleSelectedItem() {
     const itemLi = event.target
@@ -83,11 +83,17 @@ function handleSelectedItem() {
         // Tirar da seleção
         const filteredItems = selectedItems.filter( item => {
             const itemIsDifferent = item != itemId
-            return false
+            return itemIsDifferent
         })
+        selectedItems = filteredItems
+    } 
+    // se não estiver selecionado, adicionar a seleção
+    // adicionar a seleção
+    else {
+        selectedItems.push(itemId)
     }
 
-    // se não estiver selecionado, adicionar a seleção
+    
 
     // atualizar o campo escondido com os dados itens selecionados
 }
