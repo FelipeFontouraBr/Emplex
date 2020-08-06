@@ -99,5 +99,5 @@ function handleSelectedItem() {
     
 
     // atualizar o campo escondido com os dados itens selecionados
-    
+    collectedItems.value = selectedItems
 }
