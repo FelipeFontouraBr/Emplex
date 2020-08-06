@@ -29,3 +29,10 @@
     display: flex;
     font-size: 0.01px;
 }
+
+#modal .header h1 {
+    color: white;
+    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 48px;
+}
