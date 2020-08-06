@@ -82,7 +82,8 @@ function handleSelectedItem() {
     if (alreadySelected >= 0) {
         // Tirar da seleção
         const filteredItems = selectedItems.filter( item => {
-            
+            const itemIsDifferent = item != itemId
+            return false
         })
     }
 
