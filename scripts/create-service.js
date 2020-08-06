@@ -79,6 +79,12 @@ function handleSelectedItem() {
     } )
 
     // se já estiver selecionado, tirar da seleção
+    if (alreadySelected >= 0) {
+        // Tirar da seleção
+        const filteredItems = selectedItems.filter( item => {
+            
+        })
+    }
 
     // se não estiver selecionado, adicionar a seleção
 
