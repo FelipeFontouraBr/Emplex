@@ -59,7 +59,7 @@ for (const item of itemsServices) {
 }
 
 // variavel: sso é um array, onde vou tirar e selecionar dados
-let selectedItems = [2,3]
+let selectedItems = []
 
 function handleSelectedItem() {
     const itemLi = event.target
@@ -93,6 +93,7 @@ function handleSelectedItem() {
         selectedItems.push(itemId)
     }
 
+    console.log(selectedItems)
     
 
     // atualizar o campo escondido com os dados itens selecionados
