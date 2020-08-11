@@ -38,11 +38,10 @@
 }
 
 #modal form label {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 16px;
     display: block;
-    margin-bottom: 8px;
-    
+    margin-bottom: 8px;    
 }
 
 #modal form .field {
@@ -60,6 +59,7 @@
 }
 
 #modal form button {
+    margin-top: 50px;
     display: flex;
     flex: 1;
     align-items: center;
@@ -86,12 +86,12 @@
     margin-right: 16px;
 }
 
-#modal form label .services{
-    font-size: 14px;
+#modal form #services {
+    margin-top: 20px; 
+    font-size: 16px;
     line-height: 16px;
     display: block;
-    margin-bottom: 8px;
-    
+    margin-bottom: 8px;    
 }
 
 #modal form .services {
