@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="/styles/home.css">
         <link rel="stylesheet" href="/styles/main.css">
         <link rel="stylesheet" href="/styles/modal.css">
-        
+
         <link rel="stylesheet" href="/styles/responsive.css">
 
     </head>
@@ -31,53 +31,53 @@
 
                 <main>
                     <h1>Encuentra servicios en la provincia de Extremadura</h1>
-                    <p>Ayudamos a las personas a encontrar los servicios </br> que necesitan para su momento</p>
+                    <p>Ayudamos a las personas a encontrar los servicios
+                    </br>
+                    que necesitan para su momento</p>
 
-                    <!--<img src="./assets/background-home.svg" alt="" id="img">-->
+                <!--<img src="./assets/background-home.svg" alt="" id="img">-->
 
-                    <a href="#">
-                        <span></span>
-                        <strong>Busque los servicios</strong>
-                    </a>
-                </main>
+                <a href="#">
+                    <span></span>
+                    <strong>Busque los servicios</strong>
+                </a>
+            </main>
 
-            </div>
         </div>
+    </div>
 
-        <div id="modal">
-            <div class="content">
-                <div class="header">
-                    <h1>Consultar Servicios</h1>
-                    <a href="">Cerrar</a>
+    <div id="modal">
+        <div class="content">
+            <div class="header">
+                <h1>Consultar Servicios</h1>
+                <a href="">Cerrar</a>
+            </div>
+
+            <form action="">
+
+                <label for="search">Província</label>
+                <div class="search field">
+                    <input type="text" name="search" placeholder="Digite la província">
                 </div>
 
-                <form action="">
+                <label for="services">Servicios</label>
+                <div class="services">
+                    <select name="services" id="#">
+                        <option value="">Seleccione los servicios</option>
+                    </select>
+                </div>
 
-                    <label for="search">Província</label>
-                    <div class="search field">
-                        <input type="text" name="search" placeholder="Digite la província">                        
-                    </div>
+                <div class="search field">
+                    <button>
+                        <img src="/assets/search.svg" alt="Buscar">
+                    </button>
+                </div>
 
-                    <div class="search field">
-                        <div class="field">
-                            <label for="services">Servicios</label>
-                            <select name="services" id="#">
-                                 <option value="">Seleccione los servicios</option>
-                             </select>
-                        </div>
-                        
-                    </div>
-
-                    <div class="search field">
-                        <button>
-                            <img src="/assets/search.svg" alt="Buscar">
-                        </button>
-                    </div>
-                </form>
-            </div>
+            </form>
         </div>
+    </div>
 
-        <script src="create-service.js"></script>
-    </body>
+    <script src="create-service.js"></script>
+</body>
 
 </html>
