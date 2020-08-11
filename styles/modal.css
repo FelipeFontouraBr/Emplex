@@ -61,10 +61,7 @@
 #modal form button {
     margin-top: 50px;
     display: flex;
-    flex: 1;
     align-items: center;
-    justify-content: space-between;
-    width: 72px;
     height: 52px;
     background-color: var(--primary-color);
     border: 0;
@@ -79,6 +76,7 @@
 #modal form button p {
     color: white;
     margin-left: 28px;
+    margin-right: 12px;
     font-size: 16px;
 }
 
