@@ -60,8 +60,12 @@
 }
 
 #modal form button {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
     width: 72px;
-    height: 72px;
+    height: 52px;
     background-color: var(--primary-color);
     border: 0;
     border-radius: 8px;
