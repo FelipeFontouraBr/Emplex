@@ -48,3 +48,8 @@
 #modal form .field {
     display: flex;
 }
+
+#modal form input {
+    flex: 1;
+    
+}
