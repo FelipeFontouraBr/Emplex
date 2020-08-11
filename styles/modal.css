@@ -78,10 +78,13 @@
 
 #modal form button p {
     color: white;
-    margin-left: 8px;
+    margin-left: 28px;
     font-size: 16px;
 }
 
+#modal form button img {
+    margin-right: 16px;
+}
 
 #modal form label .services{
     font-size: 14px;
