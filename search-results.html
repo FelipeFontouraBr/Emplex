@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Resultado de Búsqueda</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="/styles/main.css">
+        <link rel="stylesheet" href="/styles/create-service.css">
+        <link rel="stylesheet" href="/styles/responsive.css">
+
+    </head>
+
+    <body>
+        <div id="page-create-service">
+
+                <header>
+                    <img src="./assets/logo1.png" alt="Logomarca">
+                    <h1>Emplex</h1>
+                    <a href="#">
+                        <span></span>
+                        Volver para home
+                    </a>
+                </header>
+
+                <form action="">
+
+                    <h1>Registro de servicios</h1>
+
+                    <fieldset>
+                        <legend>
+                            <h2>Datos profissionales</h2>
+                        </legend>
+
+                        <div class="field">
+                            <label for="name">Nombre y apellido</label>
+                            <input type="text" name="name" required>
+                        </div>
+
+                        <div class="field">
+                            <label for="name">E-mail</label>
+                            <input type="text" name="name" required>
+                        </div>
+
+                        <div class="field-group">
+                            <div class="field">
+                                <label for="address">Dirección</label>
+                                <input type="text" name="address" required>
+                            </div>
+
+                            <div class="field">
+                                <label for="telephone">Teléfono</label>
+                                <input type="number" name="telephone" required>
+                            </div>
+                        </div>
+
+                        <div class="field-group">
+                            <div class="field">
+                                <label for="state">Provincias</label>
+                                <select name="state" id="#">
+                                    <option value="">Seleccione la provincia</option>
+                                </select>
+                            </div>
+
+                            <!--
+                            <div class="field">
+                                <label for="city">Municipios</label>
+                                <input type="number" name="city" placeholder="Seleccione el municipio" disabled>
+                            </div>
+                            -->
+                        </div>
+
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>
+                            <h2>Servicios</h2>
+                        </legend>
+
+                        <div class="items-grid">
+                            <li data-id="1">
+                                <img src="/assets/clean.png" alt="Limpiezas-Image" class="img-icon">
+                                <span>Limpiador</span>
+                            </li>
+
+                            <li data-id="2">
+                                <img src="/assets/hair.png" alt="Peluquero-Image" class="img-icon">
+                                <span>Peluquero</span>
+                            </li>
+
+                            <li data-id="3">
+                                <img src="/assets/gardening.png" alt="Jardinero-Image" class="img-icon">
+                                <span>Jardinero</span>
+                            </li>
+
+                            <li data-id="4">
+                                <img src="/assets/construction.png" alt="Albañil-Image" class="img-icon">
+                                <span>Albañil</span>
+                            </li>
+
+                            <li data-id="5">
+                                <img src="/assets/eletric.png" alt="Eletric-Image" class="img-icon">
+                                <span>Eletricista</span>
+                            </li>
+
+                            <li data-id="6">
+                                <img src="/assets/mecanic.png" alt="Mecánico-Image" class="img-icon">
+                                <span>Mecánico</span>
+                            </li>
+                        </div>
+
+                        <input type="hidden" name="items" value>
+                        
+                    </fieldset>
+
+                    <button type="submit">Registrar servicios</button>
+
+                </form>
+          
+        </div>
+
+    <script src="/scripts/create-service.js"></script>
+    </body>
+
+</html>
