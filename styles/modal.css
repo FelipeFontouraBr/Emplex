@@ -11,6 +11,10 @@
     transition: 400ms;
 }
 
+#modal.hide {
+    
+}
+
 #modal .content {
     color: white;
     width: 420px;
