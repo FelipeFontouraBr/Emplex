@@ -76,3 +76,14 @@ main .card p {
     line-height: 26px;
     color: #6c6c80;
 }
+
+body::after {
+    content: "";
+    position: fixed;
+    background: white;
+    top: 260px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
