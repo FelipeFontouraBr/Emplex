@@ -1,6 +1,6 @@
 # Emplex
  
-Development of the application web to search generales services in region of the Extremadura
+Development of the application web to search generales services in Spain
 
 ## In Production 
 :construction:
