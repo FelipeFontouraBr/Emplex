@@ -8,5 +8,11 @@ Development of the application web to search generales services in Spain
 ## Technologies
 
 ### Frontend
+
+- JavaScript;
+- Css3;
+- HTML5;
+- Nunjucks;
+
 ------
 Learning and Developing - by Felipe Fontoura - [See my linkedin!](https://www.linkedin.com/in/fontourafelipe/) 
