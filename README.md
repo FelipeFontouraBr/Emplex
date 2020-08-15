@@ -1,3 +1,7 @@
+<h1 align="center">
+    <img alt="GitHub language count" src="https://github.com/FelipeFontouraBr/Ecoleta/blob/master/.github/ecoleta.png">
+</h1>
+
 # Emplex
  
 Development of the application web to search generales services in Spain
