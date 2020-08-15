@@ -1,8 +1,7 @@
 <h1 align="center">
     <img alt="GitHub language count" src="https://github.com/FelipeFontouraBr/Emplex/blob/master/public/assets/logo1.png">
+    Emplex
 </h1>
-
-# Emplex
  
 Development of the application web to search generales services in Spain
 
