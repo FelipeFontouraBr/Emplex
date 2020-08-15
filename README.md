@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="GitHub language count" src="https://github.com/FelipeFontouraBr/Ecoleta/blob/master/.github/ecoleta.png">
+    <img alt="GitHub language count" src="https://github.com/FelipeFontouraBr/Emplex/blob/master/public/assets/logo1.png">
 </h1>
 
 # Emplex
