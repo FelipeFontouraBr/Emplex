@@ -2,7 +2,7 @@
   "name": "emplex",
   "version": "1.0.0",
   "description": "<h1 align=\"center\">\r     <img alt=\"GitHub language count\" src=\"https://github.com/FelipeFontouraBr/Emplex/blob/master/public/assets/logo1.png\">\r </h1>",
-  "main": "index.js",
+  "main": "src/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
