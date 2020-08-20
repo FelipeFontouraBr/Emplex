@@ -5,7 +5,7 @@ const server = express()
 
 // Home
 server.get("/", function(req,res) {
-    res.send("oi")
+    res.send("Hello World")
 })
 
 server.listen(3000) // Start the server
