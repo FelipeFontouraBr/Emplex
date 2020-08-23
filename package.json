@@ -4,7 +4,7 @@
   "description": "<h1 align=\"center\">\r     <img alt=\"GitHub language count\" src=\"https://github.com/FelipeFontouraBr/Emplex/blob/master/public/assets/logo1.png\">\r </h1>",
   "main": "src/server.js",
   "scripts": {
-    "start": "node src/server.js"
+    "start": "nodemon src/server.js"
   },
   "repository": {
     "type": "git",
