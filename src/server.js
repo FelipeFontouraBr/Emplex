@@ -5,7 +5,7 @@ const server = express()
 
 // Home
 server.get("/", function(req,res) {
-    res.send("Hello World, ola")
+    res.sendFile(__dirname + "/views/index.html")
 })
 
 server.listen(3000) // Start the server
