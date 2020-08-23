@@ -12,7 +12,7 @@ server.get("/", function(req,res) {
 })
 
 // Create-service
-server.get("/", function(req,res) {
+server.get("/create-service", function(req,res) {
     res.sendFile(__dirname + "/views/create-service.html")
 })
 
