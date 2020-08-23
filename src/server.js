@@ -4,6 +4,12 @@ const server = express()
 // Setting statics file
 server.use(express.static("public"))
 
+// Template Engine
+const nunjucks = require("nunjucks")
+nunjucks.configure("src/views", {
+    express: server,
+    noCache: true
+})
 
 // Setting ways of the application
 // Home
