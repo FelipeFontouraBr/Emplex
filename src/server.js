@@ -14,12 +14,12 @@ nunjucks.configure("src/views", {
 // Setting ways of the application
 // Home
 server.get("/", function(req,res) {
-    res.render("index.html")
+    return res.render("index.html")
 })
 
 // Create-service
 server.get("/create-service", function(req,res) {
-    res.render("create-service.html")
+    return res.render("create-service.html")
 })
 
 server.listen(3000) // Start the server
