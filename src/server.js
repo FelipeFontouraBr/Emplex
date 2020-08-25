@@ -14,7 +14,7 @@ nunjucks.configure("src/views", {
 // Setting ways of the application
 // Home
 server.get("/", function(req,res) {
-    return res.render("index.html")
+    return res.render("index.html", { title: "umtítulo"})
 })
 
 // Create-service
@@ -23,3 +23,4 @@ server.get("/create-service", function(req,res) {
 })
 
 server.listen(3000) // Start the server
+console.log("Server is running")
