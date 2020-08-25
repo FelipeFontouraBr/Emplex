@@ -22,5 +22,10 @@ server.get("/create-service", function(req,res) {
     return res.render("create-service.html")
 })
 
+// Search-results
+server.get("/search", function(req,res) {
+    return res.render("search-results.html")
+})
+
 server.listen(3000) // Start the server
 console.log("Server is running")
