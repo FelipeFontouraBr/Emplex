@@ -46,44 +46,8 @@
         </div>
     </div>
 
-    <!--Modal-->
-    <div id="modal" class="hide">
-        <div class="content">
-            <div class="header">
-                <h1>Consultar Servicios</h1>
-                <a href="#">Cerrar</a>
-            </div>
-
-            <form action="">
-
-                <label for="search">Província</label>
-                <div class="search field">
-                    <input type="text" name="search" placeholder="Digite la província">
-                </div>
-
-                <label for="services" id="services">Servicios</label>
-                <div class="services field">
-                    <select name="services" id="#">
-                        <option value="0">Seleccione los servicios</option>
-                        <option value="bricklayer">Albañil</option>
-                        <option value="electrician">Eletricista</option>
-                        <option value="gardener">Jardineria</option>
-                        <option value="cleaning">Limpiador</option>
-                        <option value="mechanical">Mecánico</option>
-                        <option value="hair">Peluquero</option>
-                    </select>
-                </div>
-
-                <div class="search field">
-                    <button>
-                        <p>Busque los servicios</p>
-                        <img src="/assets/search.svg" alt="Buscar">
-                    </button>
-                </div>
-
-            </form>
-        </div>
-    </div>
+    <!--Modal retirado e enviado para o modal.html-->
+    {% include "partials/modal.html" %}
 
     <script src="/scripts/index.js"></script>
 </body>
