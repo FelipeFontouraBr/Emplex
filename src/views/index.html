@@ -1,34 +1,33 @@
 {% extends "layout.html" %}
 
-<title>Emplex</title>
+{% set bodyId = "page-home" %}
 
 {% block styles %}
     <link rel="stylesheet" href="/styles/home.css">
     <link rel="stylesheet" href="/styles/modal.css">
 {% endblock styles %}
 
-
-
 {# id="page-home" #}
+{% block content %}
 
-<div class="content">
+    <div class="content">
 
-    <header>
-        <img src="./assets/logo1.png" alt="Logomarca">
-        <h1>Emplex</h1>
-        <a href="/create-service">
-            <span></span>
-            Registra tus servicios
-        </a>
-    </header>
+        <header>
+            <img src="./assets/logo1.png" alt="Logomarca">
+            <h1>Emplex</h1>
+            <a href="/create-service">
+                <span></span>
+                Registra tus servicios
+            </a>
+        </header>
 
-    <main>
-        <h1>Encuentra servicios en la provincia de Extremadura</h1>
-        <p>Ayudamos a las personas a encontrar los servicios
-        </br>
-        que necesitan para su momento</p>
+        <main>
+            <h1>Encuentra servicios en la provincia de Extremadura</h1>
+            <p>Ayudamos a las personas a encontrar los servicios
+            </br>
+            que necesitan para su momento</p>
 
-    <!--<img src="./assets/background-home.svg" alt="" id="img">-->
+        <!--<img src="./assets/background-home.svg" alt="" id="img">-->
 
         <a href="#">
             <span></span>
@@ -37,6 +36,8 @@
     </main>
 
 </div>
+
+{% endblock content %}
 
 <!--Modal retirado e enviado para o modal.html-->
 {% include "partials/modal.html" %}
