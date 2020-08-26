@@ -1,19 +1,17 @@
 {% extends "layout.html" %}
 
-{% set pageId = "page-home" %}
+{% set pageId = "page-create-service" %}
 
+{% block title %}
+    <title>Crear un service</title>
+{% endblock title %}
 
-        <title>Crear un service</title>
+        
 
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+{% block styles %}
+    <link rel="stylesheet" href="/styles/create-service.css">
+{% endblock styles %}
 
-        <link rel="stylesheet" href="/styles/main.css">
-        <link rel="stylesheet" href="/styles/create-service.css">
-        <link rel="stylesheet" href="/styles/responsive.css">
-
-    </head>
-
-    <body>
         <div id="page-create-service">
 
                 {% include "partials/page-header.html"%}
