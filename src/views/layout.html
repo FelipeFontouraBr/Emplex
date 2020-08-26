@@ -8,25 +8,24 @@
             <title>Emplex</title>
         {% endblock %}
 
-
         <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="/styles/main.css">
 
-        {% block styles %}
-        {% endblock styles %}
+        {% block styles %}{% endblock styles %}
 
         <link rel="stylesheet" href="/styles/responsive.css">
 
     </head>
 
     <body>
-        <div id="{{ bodyId }}">           
-            {% block content %}
-            {% endblock content %}                
+        <div id="{{ bodyId }}">
+            {% block content %}{% endblock content %}
         </div>
-    </div>
 
-</body>
+        {% block modal %}
+        {% endblock modal %}
+
+    </body>
 
 </html>

@@ -39,7 +39,11 @@
 
 {% endblock content %}
 
-<!--Modal retirado e enviado para o modal.html-->
-{% include "partials/modal.html" %}
+{% block modal %}
+    <!--Modal retirado e enviado para o modal.html-->
+    {% include "partials/modal.html" %}
+{% endblock modal %}
+
+
 
 <script src="/scripts/index.js"></script>
