@@ -57,6 +57,10 @@ form legend h2 {
     font-size: 24px;
 }
 
+form legend span {
+    color: var(--title-color)
+}
+
 form .field {
     flex: 1;
     display: flex;
