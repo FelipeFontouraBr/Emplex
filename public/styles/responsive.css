@@ -35,6 +35,14 @@
     #page-create-service .field-group .field + .field {
         margin-left: 0;
     }
+
+    #page-create-service header a {
+        font-size: 14px;
+    }
+
+    #page-create-service header a span {
+        background-size: 22px;
+    }
 }
 
 @media (min-width: 2000px) {
