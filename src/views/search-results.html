@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="/styles/search-results.css">
 {% endblock style%}
 
-<div id="page-search-results">
+{% block content %}
 
     {% include "partials/page-header.html"%}
 
@@ -44,8 +44,4 @@
             </div>
         </div>
     </main>
-
-</div>
-</body>
-
-</html>
+{% endblock content %}
