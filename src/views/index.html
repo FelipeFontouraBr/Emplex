@@ -1,55 +1,40 @@
-<!DOCTYPE html>
-<html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Emplex</title>
+{% extends "layout.html" %}
 
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+<title>Emplex</title>
 
-        <link rel="stylesheet" href="/styles/home.css">
-        <link rel="stylesheet" href="/styles/main.css">
-        <link rel="stylesheet" href="/styles/modal.css">
+<link rel="stylesheet" href="/styles/home.css">
+<link rel="stylesheet" href="/styles/modal.css">
 
-        <link rel="stylesheet" href="/styles/responsive.css">
+{# id="page-home" #}
 
-    </head>
+<div class="content">
 
-    <body>
-        <div id="page-home">
+    <header>
+        <img src="./assets/logo1.png" alt="Logomarca">
+        <h1>Emplex</h1>
+        <a href="/create-service">
+            <span></span>
+            Registra tus servicios
+        </a>
+    </header>
 
-            <div class="content">
+    <main>
+        <h1>Encuentra servicios en la provincia de Extremadura</h1>
+        <p>Ayudamos a las personas a encontrar los servicios
+        </br>
+        que necesitan para su momento</p>
 
-                <header>
-                    <img src="./assets/logo1.png" alt="Logomarca">
-                    <h1>Emplex</h1>
-                    <a href="/create-service">
-                        <span></span>
-                        Registra tus servicios
-                    </a>
-                </header>
+    <!--<img src="./assets/background-home.svg" alt="" id="img">-->
 
-                <main>
-                    <h1>Encuentra servicios en la provincia de Extremadura</h1>
-                    <p>Ayudamos a las personas a encontrar los servicios
-                    </br>
-                    que necesitan para su momento</p>
+        <a href="#">
+            <span></span>
+            <strong>Busque los servicios</strong>
+        </a>
+    </main>
 
-                <!--<img src="./assets/background-home.svg" alt="" id="img">-->
+</div>
 
-                <a href="#">
-                    <span></span>
-                    <strong>Busque los servicios</strong>
-                </a>
-            </main>
+<!--Modal retirado e enviado para o modal.html-->
+{% include "partials/modal.html" %}
 
-        </div>
-    </div>
-
-    <!--Modal retirado e enviado para o modal.html-->
-    {% include "partials/modal.html" %}
-
-    <script src="/scripts/index.js"></script>
-</body>
-
-</html>
+<script src="/scripts/index.js"></script>
