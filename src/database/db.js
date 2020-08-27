@@ -36,7 +36,15 @@ db.serialize(()=> {
         ) VALUES (?,?,?,?,?,?,?);
     `
 
-    db.run(query)
+    db.run(query, [
+        "https://images.unsplash.com/photo-1585421514284-efb74c2b69ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+        "Hadassa Servicios",
+        "Calle Pintor Barjola, Badajoz Nº 5",
+        "hadassa@emplex.com",
+        "652 123 456",
+        "Badajoz",
+        "Limpiador, Jardinero"
+    ])
 
     // 3-Consulting date to table
 
