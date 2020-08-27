@@ -13,16 +13,31 @@ db.serialize(()=> {
     db.run(`
         CREATE TABLE IF NOT EXISTS services (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
+            name TEXT,
             image TEXT,
             email TEXT,
             address TEXT,
-            address2 TEXT,
+            telephone NUMBER,
             city TEXT,
             items TEXT
         );
     `)
     
     // 2-To add data to table
+    db.run(`
+        INSERT INTO services (
+            name,
+            image,
+            email,
+            address,
+            telephone,
+            city,
+            items            
+        ) 
+        VALUES (
+
+        );
+    `)
 
     // 3-Consulting date to table
 
