@@ -12,7 +12,13 @@ db.serialize(()=> {
     // 1-Created table with comand sql
     db.run(`
         CREATE TABLE IF NOT EXISTS services (
-            id INTEGER PRIMARY KEY AUTOINCREMENT 
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            image TEXT,
+            email TEXT,
+            address TEXT,
+            address2 TEXT,
+            city TEXT,
+            items TEXT
         );
     `)
     
