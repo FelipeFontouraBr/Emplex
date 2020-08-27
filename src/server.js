@@ -22,6 +22,10 @@ server.get("/", function(req,res) {
 
 // Create-service
 server.get("/create-service", function(req,res) {
+
+    console.log(req.query)
+
+
     return res.render("create-service.html")
 })
 
