@@ -2,7 +2,7 @@ const express = require("express")
 const server = express()
 
 // Get database
-const database = require("./database/db")
+const db = require("./database/db")
 
 // Setting statics file
 server.use(express.static("public"))
