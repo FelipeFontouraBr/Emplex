@@ -2,7 +2,7 @@ const express = require("express")
 const server = express()
 
 // Get database
-const db = require("./database/db")
+const database = require("./database/db")
 
 // Setting statics file
 server.use(express.static("public"))
@@ -27,7 +27,16 @@ server.get("/create-service", function(req,res) {
 
 // Search-results
 server.get("/search", function(req,res) {
-    return res.render("search-results.html")
+
+    // get data from database
+    db.all(`SELECT * FROM services`, function(err, rows){
+        if(err) {
+            return console.log(err)
+        }
+
+        // Show page .html with data from database
+        return res.render("search-results.html", { services: rows})
+    })    
 })
 
 server.listen(3000) // Start the server
