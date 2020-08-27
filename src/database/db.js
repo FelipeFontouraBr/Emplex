@@ -24,7 +24,7 @@ db.serialize(()=> {
     `)
     
     // 2-To add data to table
-    db.run(`
+    const query = `
         INSERT INTO services (
             name,
             image,
@@ -33,11 +33,10 @@ db.serialize(()=> {
             telephone,
             city,
             items            
-        ) 
-        VALUES (
+        ) VALUES (?,?,?,?,?,?,?);
+    `
 
-        );
-    `)
+    db.run(query)
 
     // 3-Consulting date to table
 
