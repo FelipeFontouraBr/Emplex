@@ -35,8 +35,7 @@ db.serialize(()=> {
             items            
         ) VALUES (?,?,?,?,?,?,?);
     `
-
-    db.run(query, [
+    const values = [
         "https://images.unsplash.com/photo-1585421514284-efb74c2b69ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
         "Hadassa Servicios",
         "Calle Pintor Barjola, Badajoz Nº 5",
@@ -44,7 +43,16 @@ db.serialize(()=> {
         "652 123 456",
         "Badajoz",
         "Limpiador, Jardinero"
-    ])
+    ]
+
+    db.run(query, values, function(err) {
+        if(err) {
+            return console.log(err)
+        }
+
+        console.log("Cadastrado com sucesso")
+        console.log(this)
+    })
 
     // 3-Consulting date to table
 
