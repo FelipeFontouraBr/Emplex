@@ -62,10 +62,17 @@ db.serialize(()=> {
             return console.log(err)
         }
 
-        console.log("Aqui estan sus registros: ")
+        console.log("Aquí están sus registros: ")
         console.log(rows)
     })
 
     // 4-Delete data from table
+    db.run(`DELETE FROM services WHERE id = ?`, [1], function(err){
+        if(err) {
+            return console.log(err)
+        }
+
+        console.log("Registro eliminado correctamente!")
+    })
 
 }) 
