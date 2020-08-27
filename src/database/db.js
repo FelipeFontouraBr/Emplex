@@ -45,16 +45,26 @@ db.serialize(()=> {
         "Limpiador, Jardinero"
     ]
 
-    db.run(query, values, function(err) {
+    function afterInsertData(err) {        
         if(err) {
             return console.log(err)
         }
 
         console.log("Cadastrado com sucesso")
         console.log(this)
-    })
+    }
+
+    //db.run(query, values, afterInsertData)
 
     // 3-Consulting date to table
+    db.all(`SELECT * FROM services`, function(err, rows){
+        if(err) {
+            return console.log(err)
+        }
+
+        console.log("Aqui estan sus registros: ")
+        console.log(rows)
+    })
 
     // 4-Delete data from table
 
