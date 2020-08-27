@@ -30,9 +30,40 @@ server.get("/create-service", function(req,res) {
 
 server.post("/saveservice", function(req,res) {
 
-    
+    // Added data to database
+    const query = `
+        INSERT INTO services (
+            image,
+            name,
+            email,
+            address,            
+            telephone,
+            city,
+            items            
+        ) VALUES (?,?,?,?,?,?,?);
+    `
+    const values = [
+        req.body.image,
+        req.body.name,
+        req.body.email,
+        req.body.address,
+        req.body.telephone,
+        req.body.city,
+        req.body.items
+    ]
 
-    return res.send("ok")
+    function afterInsertData(err) {        
+        if(err) {
+            return console.log(err)
+        }
+
+        console.log("Registered successfully")
+        console.log(this)
+
+        return res.send("ok")
+    }
+
+    db.run(query, values, afterInsertData)    
 })
 
 // Search-results
