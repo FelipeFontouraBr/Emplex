@@ -1,6 +1,6 @@
 // Pegando as provincias
 function populateState() {
-    const stateSelect = document.querySelector("select[name=state]")
+    const citySelect = document.querySelector("select[name=city]")
 
     //Fazendo uma promossa e devolvendo
     fetch('https://raw.githubusercontent.com/IagoLast/pselect/master/data/provincias.json')
@@ -8,10 +8,10 @@ function populateState() {
         return res.json() //transformando a resposta em json
     })
     //Pegando os estados
-    .then( states => {
+    .then( cities => {
 
-        for( state of states ) {
-            stateSelect.innerHTML += `<option value="${state.nm}">${state.nm}</option>`
+        for( city of cities ) {
+            citySelect.innerHTML += `<option value="${city.nm}">${city.nm}</option>`
         }
 
     })
