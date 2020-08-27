@@ -7,6 +7,9 @@ const db = require("./database/db")
 // Setting statics file
 server.use(express.static("public"))
 
+// Habilit req.body of the application
+server.use(express.urlencoded({extended: true}))
+
 // Template Engine
 const nunjucks = require("nunjucks")
 nunjucks.configure("src/views", {
@@ -22,11 +25,14 @@ server.get("/", function(req,res) {
 
 // Create-service
 server.get("/create-service", function(req,res) {
-
-    console.log(req.query)
-
-
     return res.render("create-service.html")
+})
+
+server.post("/saveservice", function(req,res) {
+
+    
+
+    return res.send("ok")
 })
 
 // Search-results
