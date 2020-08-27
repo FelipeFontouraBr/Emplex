@@ -60,7 +60,7 @@ server.post("/saveservice", function(req,res) {
         console.log("Registered successfully")
         console.log(this)
 
-        return res.send("ok")
+        return res.render("create-service.html", { saved: true})
     }
 
     db.run(query, values, afterInsertData)    
