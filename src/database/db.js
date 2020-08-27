@@ -36,13 +36,13 @@ db.serialize(()=> {
         ) VALUES (?,?,?,?,?,?,?);
     `
     const values = [
-        "https://images.unsplash.com/photo-1585421514284-efb74c2b69ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
-        "Hadassa Servicios",
+        "https://cdn.pixabay.com/photo/2015/12/07/10/49/electrician-1080554__340.jpg",
+        "Fontureb Servicios",
         "Calle Pintor Barjola, Badajoz Nº 5",
         "hadassa@emplex.com",
         "652 123 456",
         "Badajoz",
-        "Limpiador, Jardinero"
+        "Eletricista, Mecánico"
     ]
 
     function afterInsertData(err) {        
@@ -54,25 +54,25 @@ db.serialize(()=> {
         console.log(this)
     }
 
-    //db.run(query, values, afterInsertData)
+    db.run(query, values, afterInsertData)
 
     // 3-Consulting date to table
-    db.all(`SELECT * FROM services`, function(err, rows){
+    /*db.all(`SELECT * FROM services`, function(err, rows){
         if(err) {
             return console.log(err)
         }
 
         console.log("Aquí están sus registros: ")
         console.log(rows)
-    })
+    })*/
 
     // 4-Delete data from table
-    db.run(`DELETE FROM services WHERE id = ?`, [1], function(err){
+    /*db.run(`DELETE FROM services WHERE id = ?`, [1], function(err){
         if(err) {
             return console.log(err)
         }
 
         console.log("Registro eliminado correctamente!")
-    })
+    })*/
 
 }) 
