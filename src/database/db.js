@@ -66,10 +66,10 @@ db.serialize(()=> {
 
         console.log("Aquí están sus registros: ")
         console.log(rows)
-    })
+    })*/
 
     // 4-Delete data from table
-    /*db.run(`DELETE FROM services WHERE id = ?`, [13], function(err){
+    /*db.run(`DELETE FROM services WHERE id = ?`, [15], function(err){
         if(err) {
             return console.log(err)
         }

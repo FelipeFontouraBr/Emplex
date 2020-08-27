@@ -34,8 +34,10 @@ server.get("/search", function(req,res) {
             return console.log(err)
         }
 
+        const total = rows.length
+
         // Show page .html with data from database
-        return res.render("search-results.html", { services: rows})
+        return res.render("search-results.html", { services: rows, total: total})
     })    
 })
 
