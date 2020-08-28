@@ -70,14 +70,16 @@ server.post("/saveservice", function(req,res) {
 server.get("/search", function(req,res) {
 
     const search = req.query.search
+    const service = req.query.service
+
     if(search == "") {
         //pesquisa vazia
         return res.render("search-results.html", { total: 0})
-    }
-
+        
+    } 
 
     // get data from database
-    db.all(`SELECT * FROM services WHERE city = '${search}'`, function(err, rows){
+    db.all(`SELECT * FROM services WHERE city LIKE '%${search}%' AND items LIKE '%${service}%'`, function(err, rows){
         if(err) {
             return console.log(err)
         }
@@ -86,7 +88,7 @@ server.get("/search", function(req,res) {
 
         // Show page .html with data from database
         return res.render("search-results.html", { services: rows, total: total})
-    })    
+    })
 })
 
 server.listen(3000) // Start the server
