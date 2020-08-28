@@ -63,7 +63,7 @@ const collectedItems = document.querySelector("input[name=items]")
 // variavel: sso é um array, onde vou tirar e selecionar dados
 let selectedItems = []
 
-function handleSelectedItem() {
+function handleSelectedItem(event) {
     const itemLi = event.target
 
     // Adicionar ou remover uma classe do li
@@ -95,7 +95,7 @@ function handleSelectedItem() {
         selectedItems.push(itemId)
     }
 
-    console.log(selectedItems)
+    //console.log(selectedItems)
     
 
     // atualizar o campo escondido com os dados itens selecionados

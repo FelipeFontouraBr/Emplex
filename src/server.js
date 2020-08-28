@@ -69,11 +69,15 @@ server.post("/saveservice", function(req,res) {
 // Search-results
 server.get("/search", function(req,res) {
 
-    
+    const search = req.query.search
+    if(search == "") {
+        //pesquisa vazia
+        return res.render("search-results.html", { total: 0})
+    }
 
 
     // get data from database
-    db.all(`SELECT * FROM services`, function(err, rows){
+    db.all(`SELECT * FROM services WHERE city = '${search}'`, function(err, rows){
         if(err) {
             return console.log(err)
         }
