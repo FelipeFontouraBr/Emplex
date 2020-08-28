@@ -109,6 +109,13 @@ header a span {
     text-align: center;
 }
 
+footer {    
+    display: flex;
+    flex: 1;
+    align-items: center;
+    gap: 20px;
+}
+
 footer img {
     height: 20px;
     margin-top: 80px;
