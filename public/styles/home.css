@@ -52,6 +52,7 @@ header a span {
 }
 
 #page-home main {
+    margin-top: 200px;
     max-width: 800px;
     flex: 1;
     display: flex;
@@ -109,7 +110,7 @@ header a span {
     text-align: center;
 }
 
-footer {    
+footer {  
     display: flex;
     flex: 1;
     align-items: center;
@@ -117,6 +118,5 @@ footer {
 }
 
 footer img {
-    height: 20px;
-    margin-top: 80px;
+    height: 20px;    
 }
