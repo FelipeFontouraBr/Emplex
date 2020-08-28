@@ -40,7 +40,6 @@ main {
 main h4 {
     font-weight: normal;
     font-family: Roboto, sans-serif;
-
     margin-bottom: 32px;
 }
 
@@ -62,13 +61,15 @@ main img {
 
 main .card h1 {
     margin: 32px 0 20px;
-    font-size: 36px;
+    font-size: 30px;
     line-height: 41px;
     color: var(--title-color);
+    text-align: center;
+    text-transform: uppercase;
 }
 
 main .card h2 {
-    background-color: #322153e5;
+    background-color: #322153;
     color: white;
     margin-bottom: 10px;
     text-align: center;
@@ -79,13 +80,33 @@ main .card h3 {
     font-weight: bold;
     font-size: 18px;
     line-height: 30px;
-    color: var(--primary-color)
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;    
+}
+
+main .card h3 span {
+    font-size: 20px;
+    color: var(--title-color);
+    padding-right: 10px;
 }
 
 main .card p {
     font-size: 16px;
     line-height: 26px;
     color: #6c6c80;
+    display: flex;
+    align-items: center;
+    gap: 2px; 
+    margin-top: 20px;
+}
+
+main .card p #location {
+    margin-left: 50px;
+}
+
+main .card p span {
+    color: var(--title-color);
 }
 
 body {
@@ -95,7 +116,7 @@ body {
 body::after {
     content: "";
     position: absolute;
-    background: #f0f0f0;
+    background: #F0F0F5;
     top: 0px;
     right: 0;
     left: 0;
