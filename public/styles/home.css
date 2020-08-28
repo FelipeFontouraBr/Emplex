@@ -29,6 +29,14 @@ header {
     justify-content: space-between;
 }
 
+header img {
+    padding-top: 12px;
+}
+
+header h1 {
+    font-size: 34px;
+}
+
 header a {
     display: flex;
     color: var(--title-color);
@@ -52,8 +60,7 @@ header a span {
 }
 
 #page-home main h1 {
-    font-size: 54px;
-    
+    font-size: 54px;    
 }
 
 #page-home main p {
@@ -68,10 +75,10 @@ header a span {
     height: 72px;
     border-radius: 8px;
     display: flex;
-    align-items: center;
+    align-items: center; /*Pega tudo que tem la dentro e alinha ao centro*/
     margin-top: 40px;
     background-color: var(--primary-color);
-    transition: 450ms;
+    transition: 400ms;
 }
 
 #page-home main a:hover {
@@ -79,11 +86,12 @@ header a span {
 }
 
 #page-home main a span {
-    width: 72px;
-    height: 72px;
-    border-top-left-radius: 8px;
-    background-color: rgba(0, 0, 0, 0.06);
-    display: flex;
+    width: 22%;
+    height: 98%;
+    border-top-left-radius: 8px; /*Arrumar borda da esquerda que não funcinou quando passamos o border no link*/
+    border-bottom-left-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.08);
+    display: flex; /*Colocamos display flex para aparecer o botão de pesquisar*/
     align-items: center;
     justify-content: center;
 }
