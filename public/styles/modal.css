@@ -110,4 +110,13 @@
     color: #6c6c80;
 }
 
-/*PARADO NO MOMENTO 01:19:05*/
+/*== Modal service-created ==*/
+#modal.serv .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#modal.serv h1 {
+    color: #F0F0F5;
+}
