@@ -25,7 +25,7 @@ server.get("/", function(req,res) {
 
 // Create-service
 server.get("/create-service", function(req,res) {
-    return res.render("create-service.html", { saved: true})
+    return res.render("create-service.html")
 })
 
 server.post("/saveservice", function(req,res) {
@@ -68,6 +68,9 @@ server.post("/saveservice", function(req,res) {
 
 // Search-results
 server.get("/search", function(req,res) {
+
+    
+
 
     // get data from database
     db.all(`SELECT * FROM services`, function(err, rows){
