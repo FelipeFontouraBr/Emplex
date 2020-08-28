@@ -110,6 +110,11 @@
         <button type="submit">Registrar servicios</button>
 
     </form>
+
+    {% if saved %}
+        {% include "partials/service-created.html" %}
+    {% endif %}    
+
 {% endblock content %}
 
 {% block scripts %}
