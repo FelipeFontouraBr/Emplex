@@ -46,7 +46,13 @@ main h4 {
 main .cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 24px;
+    gap: 38px;
+    border: 1px solid #f0f0f0;
+    border-radius: 8px;
+    width: 350px;
+}
+
+main .cards .card {
     border: 1px solid #f0f0f0;
     border-radius: 8px;
     width: 350px;
