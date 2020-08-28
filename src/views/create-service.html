@@ -112,11 +112,13 @@
 
     </form>
 
+{% endblock content %}
+
+{% block modal %}    
     {% if saved %}
         {% include "partials/service-created.html" %}
-    {% endif %}    
-
-{% endblock content %}
+    {% endif %}  
+{% endblock modal %}      
 
 {% block scripts %}
     <script src="/scripts/create-service.js"></script>
