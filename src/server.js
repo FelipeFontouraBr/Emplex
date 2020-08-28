@@ -25,7 +25,7 @@ server.get("/", function(req,res) {
 
 // Create-service
 server.get("/create-service", function(req,res) {
-    return res.render("create-service.html")
+    return res.render("create-service.html", { saved: true})
 })
 
 server.post("/saveservice", function(req,res) {
