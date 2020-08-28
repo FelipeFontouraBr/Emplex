@@ -52,7 +52,7 @@ header a span {
 }
 
 #page-home main {
-    margin-top: 200px;
+    margin-top: 170px;
     max-width: 800px;
     flex: 1;
     display: flex;
@@ -61,7 +61,7 @@ header a span {
 }
 
 #page-home main h1 {
-    font-size: 54px;    
+    font-size: 54px;  
 }
 
 #page-home main p {
@@ -110,13 +110,17 @@ header a span {
     text-align: center;
 }
 
-footer {  
+footer {
+    margin-top: 40px;
+}
+
+footer .redes {  
     display: flex;
     flex: 1;
     align-items: center;
-    gap: 20px;
+    gap: 20px;    
 }
 
-footer img {
+footer .redes img {
     height: 20px;    
 }
