@@ -1,0 +1,37 @@
+<div id="modal" class="hide">
+        <div class="content">
+            <div class="header">
+                <h1>Consultar Servicios</h1>
+                <a href="#">Cerrar</a>
+            </div>
+
+            <form action="/search">
+
+                <label for="search">Província</label>
+                <div class="search field">
+                    <input type="text" name="search" placeholder="Digite la província">
+                </div>
+
+                <label for="service" id="services">Servicios</label>
+                <div class="service field">
+                    <select name="service">
+                        <option value="0">Seleccione los servicios</option>
+                        <option value="Albañil">Albañil</option>
+                        <option value="Eletricista">Eletricista</option>
+                        <option value="Jardinero">Jardinero</option>
+                        <option value="Limpiador">Limpiador</option>
+                        <option value="Mecánico">Mecánico</option>
+                        <option value="Peluquero">Peluqueria</option>
+                    </select>
+                </div>
+
+                <div class="search field">
+                    <button>
+                        <p>Busque los servicios</p>
+                        <img src="/assets/search.svg" alt="Buscar">
+                    </button>
+                </div>
+
+            </form>
+        </div>
+    </div>
