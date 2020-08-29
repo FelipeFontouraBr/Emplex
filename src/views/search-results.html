@@ -64,13 +64,13 @@
 
         {% endif %}
 
-        {% block modal %}
-            {% include "partials/modal-service.html" %}
-        {% endblock modal%}
-
-        {% block scripts %}
-            <script src="./scripts/service.js"></script>
-        {% endblock scripts%}
-
     </main>
 {% endblock content %}
+
+{% block modal %}
+    {% include "partials/modal-service.html" %}
+{% endblock modal%}
+
+{% block scripts %}
+    <script src="./scripts/service.js"></script>
+{% endblock scripts%}
