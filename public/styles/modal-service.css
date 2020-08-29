@@ -5,6 +5,9 @@
     position: fixed;
     top: 0;
 
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
     transition: 400ms;
 }
 
@@ -13,8 +16,13 @@
 }
 
 #modal .content {
-    color: white;
-    width: 420px;
+    background-color: rgb(48, 33, 187);
+    border: 3px solid var(--color-green);
+    border-radius: 8px;
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+    position: relative;
 }
 
 #modal .header {
@@ -25,9 +33,10 @@
 }
 
 #modal .header a {
-    background-image: url("../assets/x.svg");
+    background-image: url("../assets/x-serv.svg");
     width: 20px;
     height: 20px;
+    margin-right: 20px;
     display: flex;
     font-size: 0.01px;
 }
