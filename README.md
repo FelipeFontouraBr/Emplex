@@ -4,7 +4,7 @@
 
 # Emplex
  
-Development of the application web to search generales services in Spain
+Development of the application web to search generals services in Spain
 
 ## Presentation:
 
