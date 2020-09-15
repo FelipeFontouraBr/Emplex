@@ -24,7 +24,7 @@ Development of the application web to search generals services in Spain
 
 - Node.js;
 - Express.js;
-- Sqlite;
+- Sqlite
 
 ### API
 
