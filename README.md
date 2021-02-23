@@ -8,7 +8,7 @@ Development of the application web to search generals services in Spain
 
 ## Presentation:
 
-![img](https://github.com/FelipeFontouraBr/Emplex/blob/master/public/assets/apresentacion.png)
+![img](https://github.com/FelipeFontouraBr/Emplex/blob/master/public/assets/emplex.gif)
 
 ## Technologies
 
