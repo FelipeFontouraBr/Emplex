@@ -4,9 +4,9 @@
 
 # Emplex
  
-Development of the application web to search generales services in Spain
+Development of the application web to search generals services in Spain
 
-### PRESENTATION:
+## Presentation:
 
 ![img](https://github.com/FelipeFontouraBr/Emplex/blob/master/public/assets/apresentacion.png)
 
@@ -24,9 +24,10 @@ Development of the application web to search generales services in Spain
 
 - Node.js;
 - Express.js;
-- Sqlite;
+- Sqlite
 
 ### API
 
+- Provincias (España)
 ------
 Learning and Developing - by Felipe Fontoura - [See my linkedin!](https://www.linkedin.com/in/fontourafelipe/) 
